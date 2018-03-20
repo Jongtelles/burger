@@ -1,20 +1,20 @@
-<div class="container">
+<div class="container-fluid">
   <div class="row justify-content-center">
     <h1>Burgers!</h1>
   </div>
-  <div class="row justify-content-center">
-    <div class="col-5">
+  <div class="row justify-content-between">
+    <div class="col-6">
       <h2>Burgers to eat:</h2>
       <ul>
         {{#each burgers}} {{#unless devoured}}
-        <li class="p-2">
-          {{burger_name}}
-          <button class="devour btn" data-id="{{this.id}}">Devour!</button>
+        <li class="p-2 m-2">
+          <img class="img-fluid img-burger" src="/assets/img/burger.png" alt="a burger"> {{burger_name}}
+          <button class="devour btn-block" data-id="{{this.id}}">Devour!</button>
         </li>
         {{/unless}} {{/each}}
       </ul>
     </div>
-    <div class="col-5">
+    <div class="col-6">
       <h2>Ate these:</h2>
       <ul>
         {{#each burgers}} {{#if devoured}}
@@ -25,16 +25,18 @@
       </ul>
     </div>
   </div>
-  <div class="row justify-content-center">
-    <div class="col-5">
-      <h2>Add a Burger</h2>
-      <form class="create-form">
-        <div class="form-group">
-          <label for="bg">Burger Name:</label>
-          <input type="text" id="bg" name="burger_name">
-        </div>
-        <button type="submit btn">Add Burger</button>
-      </form>
+  <footer class="footer">
+    <div class="row justify-content-center mt-5">
+      <div class="col-5 text-center">
+        <h2 class="yellow">Add a Burger</h2>
+        <form class="create-form">
+          <div class="form-group">
+            <label class="yellow" for="bg">Burger Name:</label>
+            <input type="text" id="bg" name="burger_name">
+            <button type="submit btn">Add Burger</button>
+          </div>
+        </form>
+      </div>
     </div>
-  </div>
+  </footer>
 </div>

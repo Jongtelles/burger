@@ -1,0 +1,29 @@
+body {
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Shrikhand', cursive;
+}
+
+h1,
+h2 {
+    color: rgb(255, 0, 0);
+}
+
+.img-burger {
+    height: 25%;
+    width: 25%;
+}
+
+.btn-block {
+    color: red;
+    background-color: rgb(255, 255, 0);
+}
+
+.yellow {
+    color: rgb(255, 255, 0);
+}
+
+footer {
+    background-color: rgb(255, 0, 0);
+}

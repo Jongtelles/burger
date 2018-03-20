@@ -7,7 +7,7 @@ $(document).ready(() => {
             return alert('Please enter a burger name!')
         }
         let newBurg = {
-            burger_name: $("#bg").val().trim(),
+            burger_name: $("#bg").val().trim()
         };
 
         $.ajax("/api/burgers", {
